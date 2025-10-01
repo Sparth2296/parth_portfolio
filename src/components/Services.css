@@ -1,0 +1,121 @@
+.service-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  height: 350px;
+  display: flex;
+  /* width: 300px; */
+  flex-direction: column;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  border-color: var(--primary-color);
+}
+
+.service-card.featured {
+  border-color: var(--primary-color);
+  box-shadow: 0 15px 35px rgba(243, 156, 18, 0.2);
+}
+
+.service-card.featured .service-icon {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.service-card.featured .service-title {
+  color: var(--primary-color);
+}
+
+.service-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  transition: all 0.3s ease;
+  color: #ffffff;
+}
+
+.service-card:hover .service-icon {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+  background: rgba(243, 156, 18, 0.1);
+}
+
+.service-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.service-description {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  opacity: 0.8;
+  margin: 0;
+  flex: 1;
+}
+.service-description {
+  color: #ffffff;
+}
+
+/* Light Mode Styles */
+.light-mode .service-card {
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.light-mode .service-card:hover {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.light-mode .service-icon {
+  color: #333333;
+  border-color: rgba(0, 0, 0, 0.2);
+}
+
+.light-mode .service-title {
+  color: #333333;
+}
+
+.light-mode .service-description {
+  color: #666666;
+}
+
+.light-mode .service-card:hover .service-icon {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+  background: rgba(243, 156, 18, 0.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .service-card {
+    height: auto;
+    min-height: 280px;
+  }
+  
+  .service-icon {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 1rem;
+  }
+  
+  .service-title {
+    font-size: 1.2rem;
+  }
+  
+  .service-description {
+    font-size: 0.9rem;
+  }
+}

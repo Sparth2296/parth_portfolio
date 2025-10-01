@@ -1,0 +1,148 @@
+.resume-section {
+  position: relative;
+}
+
+.resume-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.resume-icon {
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-right: 1rem;
+}
+
+.resume-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.timeline {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 15px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--primary-color);
+  opacity: 0.3;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -1.42rem;
+  top: 1.5rem;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--primary-color);
+  z-index: 2;
+}
+
+.timeline-card {
+  margin-left: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+
+.timeline-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  border-color: var(--primary-color);
+}
+
+.timeline-degree {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  line-height: 1.3;
+}
+
+.timeline-period {
+  font-size: 0.9rem;
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-institution {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #ffff;
+  opacity: 0.9;
+}
+
+.timeline-description {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  opacity: 0.8;
+  color: #ffff;
+  margin: 0;
+}
+
+/* Light Mode Styles */
+.light-mode .timeline-card {
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.light-mode .timeline-card:hover {
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.light-mode .timeline-institution {
+  color: #333333;
+}
+
+.light-mode .timeline-description {
+  color: #666666;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .timeline {
+    padding-left: 1.5rem;
+  }
+  
+  .timeline-dot {
+    left: -1.5rem;
+  }
+  
+  .timeline-card {
+    margin-left: 0.5rem;
+  }
+  
+  .resume-title {
+    font-size: 1.6rem;
+  }
+  
+  .timeline-degree {
+    font-size: 1.1rem;
+  }
+  
+  .timeline-institution {
+    font-size: 1rem;
+  }
+}
