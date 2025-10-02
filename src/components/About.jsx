@@ -6,7 +6,7 @@ const About = () => {
 
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = `/ParthSolankiCV.pdf`;
+    link.href = `public/ParthSolankiCV.pdf.pdf`;
     link.download = "ParthSolankiCV.pdf";
     link.click();
   };
@@ -15,11 +15,11 @@ const About = () => {
   return (
     <section id="about" className="section">
       <Container>
-        <div className="section-title" data-aos="zoom-in">ABOUT ME</div>
+        <div className="section-title" >ABOUT ME</div>
 
         <Row className="align-items-center about-row">
           <Col lg={6} className="mb-4">
-            <div className="about-image" data-aos="flip-left">
+            <div className="about-image ">
               <img
                 src="/IMG-20250320-WA0006.jpg"
                 alt="About Me"
@@ -28,7 +28,7 @@ const About = () => {
             </div>
           </Col>
 
-          <Col lg={6} className="pe-4" data-aos="zoom-out-up">
+          <Col lg={6} className="pe-4" >
             <div className="about-content px-sm-0">
               <h2 className="about-name">Hi There! I'm Parth Solanki</h2>
               <p className="about-role text-primary-custom">

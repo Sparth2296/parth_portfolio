@@ -25,9 +25,7 @@ const Navbar = ({ activeSection, darkMode }) => {
   };
 
   return (
-    <div data-aos="fade-right"
-     data-aos-offset="300"
-     data-aos-easing="ease-in-sine">
+    <div>
       {/* Desktop Sidebar */}
       <div className={`sidebar-nav ${darkMode ? 'dark' : 'light'}`} >
         <div className="profile-section">
@@ -69,7 +67,7 @@ const Navbar = ({ activeSection, darkMode }) => {
         <Container fluid>
           <BSNavbar.Brand className="brand">
             <img 
-              src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=50&h=50&fit=crop" 
+              src="/IMG-20250320-WA0022 (2).jpg" 
               alt="Profile" 
               className="brand-image"
             />
@@ -83,6 +81,8 @@ const Navbar = ({ activeSection, darkMode }) => {
           >
             <FaBars />
           </BSNavbar.Toggle>
+
+          
           
           <BSNavbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">

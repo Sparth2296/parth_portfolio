@@ -77,8 +77,9 @@ const Contact = () => {
                         <h6 className="contact-title">{item.title}</h6>
                         <a 
                           href={item.link} 
+                          target='_blank'
                           className="contact-value"
-                          onClick={item.link === '#' ? (e) => e.preventDefault() : undefined}
+                          onClick={item.link === '#' ? (e) => e.preventDefault() : undefined} 
                         >
                           {item.value}
                         </a>
