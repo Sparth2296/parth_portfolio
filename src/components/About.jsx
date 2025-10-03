@@ -4,14 +4,6 @@ import "./About.css";
 
 const About = () => {
 
-  const handleDownload = () => {
-    const link = document.createElement("a");
-    link.href = `public/ParthSolankiCV.pdf.pdf`;
-    link.download = "ParthSolankiCV.pdf";
-    link.click();
-  };
-
-
   return (
     <section id="about" className="section">
       <Container>
@@ -79,9 +71,14 @@ const About = () => {
                 </Row>
               </div>
 
-               <Button className="btn-primary-custom mt-4" onClick={handleDownload}>
-      Download CV
-    </Button>
+              <a
+                href="/ParthSolankiCV.pdf"
+                download="ParthSolankiCV.pdf"
+                className="btn btn-primary-custom mt-4"
+              >
+                Download CV
+              </a>
+
             </div>
           </Col>
         </Row>
